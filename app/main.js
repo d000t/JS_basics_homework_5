@@ -3,6 +3,9 @@ function task1() {
     alert(num_to_str_representation(entered_num));
 }
  function num_to_str_representation(entered_num){
+    if (entered_num.length<1){
+       return 'Sorry, you need to enter number from 1 to 99';
+    }
     let nums_map = new Map();
     nums_map.set('1', 'one');
     nums_map.set('2', 'two');
