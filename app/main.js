@@ -37,7 +37,7 @@ function task1() {
      tens_and_digits_map.set('80', 'eighty');
      tens_and_digits_map.set('90', 'ninety');
     return tens_and_digits_map.has(entered_num) ? tens_and_digits_map.get(entered_num)
-        : `${tens_map.get(entered_num.split('')[0] + '0')}-${nums_map.get(entered_num[1])}`;
+        : `${tens_and_digits_map.get(entered_num.split('')[0] + '0')}-${nums_map.get(entered_num[1])}`;
 }
 function task2(){
     let str = prompt('Enter a string');
