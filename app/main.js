@@ -6,38 +6,36 @@ function task1() {
     if (entered_num.length<1){
        return 'Sorry, you need to enter number from 1 to 99';
     }
-    let nums_map = new Map();
-    nums_map.set('1', 'one');
-    nums_map.set('2', 'two');
-    nums_map.set('3', 'three');
-    nums_map.set('4', 'four');
-    nums_map.set('5', 'five');
-    nums_map.set('6', 'six');
-    nums_map.set('7', 'seven');
-    nums_map.set('8', 'eight');
-    nums_map.set('9', 'nine');
-
     let tens_and_digits_map = new Map();
-     tens_and_digits_map.set('10', 'ten');
-     tens_and_digits_map.set('11', 'eleven');
-     tens_and_digits_map.set('12', 'twelve');
-     tens_and_digits_map.set('13', 'thirteen');
-     tens_and_digits_map.set('14', 'fourteen');
-     tens_and_digits_map.set('15', 'fifteen');
-     tens_and_digits_map.set('16', 'sixteen');
-     tens_and_digits_map.set('17', 'seventeen');
-     tens_and_digits_map.set('18', 'eighteen');
-     tens_and_digits_map.set('19', 'nineteen');
-     tens_and_digits_map.set('20', 'twenty');
-     tens_and_digits_map.set('30', 'thirty');
-     tens_and_digits_map.set('40', 'forty');
-     tens_and_digits_map.set('50', 'fifty');
-     tens_and_digits_map.set('60', 'sixty');
-     tens_and_digits_map.set('70', 'seventy');
-     tens_and_digits_map.set('80', 'eighty');
-     tens_and_digits_map.set('90', 'ninety');
-    return tens_and_digits_map.has(entered_num) ? tens_and_digits_map.get(entered_num)
-        : `${tens_and_digits_map.get(entered_num.split('')[0] + '0')}-${nums_map.get(entered_num[1])}`;
+     nums_map.set('1', 'one');
+     nums_map.set('2', 'two');
+     nums_map.set('3', 'three');
+     nums_map.set('4', 'four');
+     nums_map.set('5', 'five');
+     nums_map.set('6', 'six');
+     nums_map.set('7', 'seven');
+     nums_map.set('8', 'eight');
+     nums_map.set('9', 'nine');
+     nums_map.set('10', 'ten');
+     nums_map.set('11', 'eleven');
+     nums_map.set('12', 'twelve');
+     nums_map.set('13', 'thirteen');
+     nums_map.set('14', 'fourteen');
+     nums_map.set('15', 'fifteen');
+     nums_map.set('16', 'sixteen');
+     nums_map.set('17', 'seventeen');
+     nums_map.set('18', 'eighteen');
+     nums_map.set('19', 'nineteen');
+     nums_map.set('20', 'twenty');
+     nums_map.set('30', 'thirty');
+     nums_map.set('40', 'forty');
+     nums_map.set('50', 'fifty');
+     nums_map.set('60', 'sixty');
+     nums_map.set('70', 'seventy');
+     nums_map.set('80', 'eighty');
+     nums_map.set('90', 'ninety');
+    return nums_map.has(entered_num) ? nums_map.get(entered_num)
+        : `${nums_map.get(entered_num.split('')[0] + '0')}-${nums_map.get(entered_num[1])}`;
 }
 function task2(){
     let str = prompt('Enter a string');
