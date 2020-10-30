@@ -14,26 +14,26 @@ function task1() {
     nums_map.set('8', 'eight');
     nums_map.set('9', 'nine');
 
-    let tens_map = new Map();
-    tens_map.set('10', 'ten');
-    tens_map.set('11', 'eleven');
-    tens_map.set('12', 'twelve');
-    tens_map.set('13', 'thirteen');
-    tens_map.set('14', 'fourteen');
-    tens_map.set('15', 'fifteen');
-    tens_map.set('16', 'sixteen');
-    tens_map.set('17', 'seventeen');
-    tens_map.set('18', 'eighteen');
-    tens_map.set('19', 'nineteen');
-    tens_map.set('20', 'twenty');
-    tens_map.set('30', 'thirty');
-    tens_map.set('40', 'forty');
-    tens_map.set('50', 'fifty');
-    tens_map.set('60', 'sixty');
-    tens_map.set('70', 'seventy');
-    tens_map.set('80', 'eighty');
-    tens_map.set('90', 'ninety');
-    return tens_map.has(entered_num) ? tens_map.get(entered_num)
+    let tens_and_digits_map = new Map();
+     tens_and_digits_map.set('10', 'ten');
+     tens_and_digits_map.set('11', 'eleven');
+     tens_and_digits_map.set('12', 'twelve');
+     tens_and_digits_map.set('13', 'thirteen');
+     tens_and_digits_map.set('14', 'fourteen');
+     tens_and_digits_map.set('15', 'fifteen');
+     tens_and_digits_map.set('16', 'sixteen');
+     tens_and_digits_map.set('17', 'seventeen');
+     tens_and_digits_map.set('18', 'eighteen');
+     tens_and_digits_map.set('19', 'nineteen');
+     tens_and_digits_map.set('20', 'twenty');
+     tens_and_digits_map.set('30', 'thirty');
+     tens_and_digits_map.set('40', 'forty');
+     tens_and_digits_map.set('50', 'fifty');
+     tens_and_digits_map.set('60', 'sixty');
+     tens_and_digits_map.set('70', 'seventy');
+     tens_and_digits_map.set('80', 'eighty');
+     tens_and_digits_map.set('90', 'ninety');
+    return tens_and_digits_map.has(entered_num) ? tens_and_digits_map.get(entered_num)
         : tens_map.get(entered_num.split('')[0] + '0') + nums_map.get(entered_num.split('-')[1]);
 }
 function task2(){
