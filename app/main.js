@@ -44,9 +44,9 @@ function task2(){
     alert(get_String_info(JSON.stringify(str)));
 }
 function get_String_info(str){
-    return [`Quantity of digits - ${str.match(/\d/g).length || []}`,
+    return [`Quantity of digits - ${str.match(/\d/g).length || []}\n`,
 
-            `Number of letters - ${str.match(/[^\d&&^\s&&^\W]/g).length}`,
+            `Number of letters - ${str.match(/[^\d&&^\s&&^\W]/g).length}\n`,
 
             `Number of other symbols - ${str.match(/[^\s&&^\w]/g).length - 2}`];
 }
